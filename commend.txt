@@ -1,4 +1,0 @@
-git clone git@github.com:lizidoufu/lizidoufu.github.io.git
-git add index.html
-git commit -m "update then file index.html"
-git push
