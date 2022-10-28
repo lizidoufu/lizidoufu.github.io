@@ -59,12 +59,12 @@ files = {
 
 import os 
 prefix = "https://gitee.com/Lizidoufu/algorithm-implementation/blob/master"
-with open("./pages/Pages04-ClassicalAlgorithm.md", "w") as md:
-    md.write("### 算法实现\n\n")
-    md.write("手工实现部分算法，内容包含经典算法和机器学习等部分内容，部分代码参考于 LeetCode 和 Blog；\n\n")
+with open("./pages/Pages04-ClassicalAlgorithm.md", "w", encoding="utf8") as md:
+    md.write("### 算法实现\r\n")
+    md.write("手工实现部分算法，内容包含经典算法和机器学习等部分内容，部分代码参考于 LeetCode 和 Blog；\r\n")
     for head in files.keys():
-        md.write(f"### {head}\n\n")
+        md.write(f"### {head}\r\n")
         for file in files[head]:
             href = os.path.join(prefix, file)
             md.write(f"<a href='{href}' style='text-decoration: none;'>{file}</a>\n")
-    md.write("\n\n")
+    md.write("\r\n")
