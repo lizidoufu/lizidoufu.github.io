@@ -66,5 +66,5 @@ with open("./pages/Pages04-ClassicalAlgorithm.md", "w", encoding="utf8") as md:
         md.write(f"### {head}\r\n")
         for file in files[head]:
             href = os.path.join(prefix, file)
-            md.write(f"<a href='{href}' style='text-decoration: none;'>{file}</a>\n")
+            md.write(f"<a href='{href}' target='_blank' style='text-decoration: none;'>{file}</a>\n")
     md.write("\r\n")
